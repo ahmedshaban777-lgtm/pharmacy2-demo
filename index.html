@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صيدلية سلامتك | ابعت صورة الروشتة ونجهزهالك</title>
+<meta name="description" content="صيدلية سلامتك: ابعت صورة الروشتة على واتساب وهنجهزهالك ونوصلهالك. استشارة صيدلي مجانية، اشتراك أدوية شهرية، وخدمة ٢٤ ساعة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0f766e; --teal2:#0b5f59; --mint:#eafaf6; --mint2:#d3f2ea;
+  --red:#e0452c; --ink:#132a26; --muted:#5b726c; --wa:#22c15e; --wa2:#1da851;
+  --line:#dcebe6; --cream:#fbfdfc; --radius:18px; --shadow:0 10px 30px rgba(15,118,110,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+h1,h2,h3,h4{font-family:'Cairo',sans-serif;line-height:1.35}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+.section{padding:80px 0}
+.section-head{text-align:center;max-width:620px;margin:0 auto 48px}
+.section-head .kicker{display:inline-block;background:var(--mint2);color:var(--teal2);font-weight:700;font-size:.85rem;padding:6px 16px;border-radius:999px;margin-bottom:14px}
+.section-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:800}
+.section-head p{color:var(--muted);margin-top:10px}
+nav{position:fixed;inset-inline:0;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Cairo';font-weight:800;font-size:1.15rem;color:var(--teal2)}
+.brand .logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--teal),#2dd4bf);display:grid;place-items:center;font-size:1.2rem;color:#fff}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:var(--muted);font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{background:var(--teal);color:#fff;font-weight:800;padding:9px 20px;border-radius:999px;font-size:.9rem}
+.burger{display:none;background:none;border:none;color:var(--teal2);font-size:1.5rem;cursor:pointer}
+.hero{padding:150px 0 90px;background:radial-gradient(800px 420px at 88% 0%,rgba(45,212,191,.16),transparent 60%),linear-gradient(170deg,#fff 0%,var(--mint) 100%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:7px 16px;border-radius:999px;font-size:.85rem;color:var(--teal2);font-weight:700}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:900;margin:18px 0 14px}
+.hero h1 .hl{color:var(--teal)}
+.hero p.lead{color:var(--muted);font-size:1.08rem;max-width:520px}
+.hero-btns{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;padding:14px 28px;border-radius:14px;font-size:1rem;transition:transform .15s,box-shadow .15s;font-family:'Cairo'}
+.btn-teal{background:linear-gradient(135deg,var(--teal),#2dd4bf);color:#fff}
+.btn-teal:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(15,118,110,.35)}
+.btn-ghost{background:#fff;color:var(--teal2);border:1.5px solid var(--mint2)}
+.hero-trust{display:flex;gap:24px;margin-top:34px;flex-wrap:wrap}
+.hero-trust .t{display:flex;align-items:center;gap:9px;font-weight:700;font-size:.92rem}
+.hero-trust .ic{width:36px;height:36px;border-radius:11px;background:#fff;box-shadow:var(--shadow);display:grid;place-items:center;font-size:1.1rem}
+.rx-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:26px}
+.rx-card .rx-head{display:flex;justify-content:space-between;align-items:center;border-bottom:2px dashed var(--mint2);padding-bottom:14px;margin-bottom:16px}
+.rx-card .rx-head b{font-family:'Cairo';font-weight:800;color:var(--teal2)}
+.rx-card .rx-head span{font-size:.78rem;background:var(--mint);color:var(--teal2);padding:4px 12px;border-radius:999px;font-weight:700}
+.rx-line{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f0f7f4}
+.rx-line:last-child{border:none}
+.rx-line .pill{width:34px;height:34px;border-radius:10px;background:var(--mint);display:grid;place-items:center;font-size:1.1rem;flex:none}
+.rx-line b{font-size:.92rem;display:block}
+.rx-line span{font-size:.8rem;color:var(--muted)}
+.rx-card .done{margin-top:14px;background:var(--mint);border-radius:12px;padding:10px 14px;font-size:.85rem;font-weight:700;color:var(--teal2);display:flex;gap:8px;align-items:center}
+.float{position:absolute;background:#fff;border-radius:14px;padding:10px 16px;font-size:.82rem;font-weight:700;box-shadow:0 14px 30px rgba(15,118,110,.18);display:flex;align-items:center;gap:8px;border:1px solid var(--line)}
+.float.f1{top:-18px;inset-inline-start:-14px}
+.float .dot{width:9px;height:9px;border-radius:50%;background:var(--wa)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 20px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .icon{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:14px;background:linear-gradient(135deg,var(--mint),var(--mint2))}
+.card h3{font-size:1.02rem;font-weight:800;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.88rem}
+.products{background:#fff}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.prod{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.prod:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.prod .thumb{aspect-ratio:1/.82;display:grid;place-items:center;font-size:3.2rem;position:relative}
+.prod .thumb .off{position:absolute;top:12px;inset-inline-start:12px;background:var(--red);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:999px}
+.prod .body{padding:16px;display:flex;flex-direction:column;flex:1}
+.prod .catname{font-size:.75rem;color:var(--teal);font-weight:700}
+.prod h3{font-size:.95rem;font-weight:800;margin:4px 0 8px}
+.prod .price-row{margin-top:auto;display:flex;align-items:baseline;gap:8px}
+.prod .price{font-family:'Cairo';font-weight:900;font-size:1.2rem;color:var(--teal2)}
+.prod .old{font-size:.85rem;color:#b8c4bd;text-decoration:line-through}
+.prod .order{margin-top:12px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#fff;font-weight:800;font-size:.86rem;padding:10px;border-radius:11px}
+.prod .order:hover{background:var(--wa2)}
+.prod .order svg{width:16px;height:16px;fill:#fff}
+.sub{background:linear-gradient(160deg,var(--teal2),var(--teal));color:#fff}
+.sub-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.sub h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;margin-bottom:14px}
+.sub p{color:#c8ece4;margin-bottom:14px}
+.sub ul{list-style:none;display:grid;gap:12px;margin:18px 0 26px}
+.sub li{display:flex;gap:11px;align-items:flex-start}
+.sub li .check{flex:none;width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.16);color:#7ef0d9;display:grid;place-items:center;font-weight:900;font-size:.8rem;margin-top:3px}
+.sub .panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:28px}
+.sub .panel .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.18);font-size:.94rem}
+.sub .panel .row:last-child{border:none}
+.sub .panel .row b{color:#ffd257}
+.btn-white{background:#fff;color:var(--teal2)}
+.btn-white:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.2)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.info{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.info h3{font-size:1.02rem;font-weight:800;display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.info h3 .ic{width:36px;height:36px;border-radius:10px;background:var(--mint);display:grid;place-items:center;font-size:1rem}
+.info ul{list-style:none;display:grid;gap:9px;color:var(--muted);font-size:.92rem}
+.info li{display:flex;gap:9px}
+.info li::before{content:"•";color:var(--teal);font-weight:900}
+.cta{background:linear-gradient(150deg,var(--teal2),var(--teal));color:#fff;text-align:center}
+.cta h2{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:900}
+.cta p{color:#c8ece4;max-width:540px;margin:14px auto 30px}
+.btn-wa{background:var(--wa);color:#fff;font-size:1.08rem;padding:16px 36px;border-radius:16px}
+.btn-wa:hover{background:var(--wa2);transform:translateY(-3px);box-shadow:0 14px 30px rgba(34,193,94,.4)}
+.cta .alt{display:block;margin-top:16px;color:#9edfd0;font-size:.88rem}
+footer{background:#09302b;color:#8fc6ba;padding:28px 0;text-align:center;font-size:.88rem}
+footer b{color:#dff3ec}
+.wa-float{position:fixed;bottom:22px;inset-inline-end:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 26px rgba(34,193,94,.45)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:900px){
+  .cards,.prod-grid{grid-template-columns:repeat(2,1fr)}
+  .info-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+  .hero-grid,.sub-grid{grid-template-columns:1fr;gap:44px}
+  .hero{padding-top:126px}
+  .rx-card{max-width:420px;margin-inline:auto}
+  .nav-links{position:fixed;top:66px;inset-inline:0;background:#fff;flex-direction:column;padding:18px 5%;gap:16px;display:none;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+}
+@media (max-width:560px){
+  .prod-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .prod .thumb{font-size:2.4rem}
+  .section{padding:60px 0}
+  .hero-trust{gap:14px}
+  .float.f1{inset-inline-start:0}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#" class="brand"><span class="logo">✚</span> صيدلية سلامتك</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#products">المنتجات</a></li>
+      <li><a href="#sub">الاشتراك الشهري</a></li>
+      <li><a href="#info">المواعيد</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">ابعت الروشتة</a>
+    <button class="burger" id="burger" aria-label="القائمة">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">🕐 مفتوحين ٢٤ ساعة - خط ليلي للطوارئ</span>
+      <h1>صوّر الروشتة وابعتهالنا<br><span class="hl">ونجهزهالك لحد باب البيت</span></h1>
+      <p class="lead">مش لازم تنزل. ابعت صورة الروشتة على واتساب، الصيدلي يراجعها ويرد عليك بالسعر، والتوصيل يوصلك في نفس اليوم.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-teal">📷 ابعت صورة الروشتة</a>
+        <a href="#services" class="btn btn-ghost">خدماتنا</a>
+      </div>
+      <div class="hero-trust">
+        <div class="t"><span class="ic">👨‍⚕️</span> صيدلي يرد عليك بنفسه</div>
+        <div class="t"><span class="ic">🛵</span> توصيل في نفس اليوم</div>
+        <div class="t"><span class="ic">💵</span> الدفع عند الاستلام</div>
+      </div>
+    </div>
+    <div class="rx-card">
+      <div class="float f1"><span class="dot"></span> الصيدلي أونلاين الآن</div>
+      <div class="rx-head"><b>روشتة د. محمد علي</b><span>✓ اتجهزت</span></div>
+      <div class="rx-line"><span class="pill">💊</span><div><b>بنادول إكسترا - علبة ٢٤ قرص</b><span>مرتين يوميًا بعد الأكل</span></div></div>
+      <div class="rx-line"><span class="pill">🧪</span><div><b>مضاد حيوي ٥٠٠ مجم</b><span>كورس ٧ أيام - ٣ مرات يوميًا</span></div></div>
+      <div class="rx-line"><span class="pill">🩹</span><div><b>فيتامين سي فوار</b><span>مرة يوميًا الصبح</span></div></div>
+      <div class="done">✅ طلبك اتجهز - المندوب في الطريق إليك</div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">خدماتنا</span>
+      <h2>أكتر من مجرد صيدلية</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="icon">📷</div><h3>روشتة بالصورة</h3><p>صوّر الروشتة وابعتها واتساب - نراجعها ونجهزها ونوصلها لباب البيت.</p></div>
+      <div class="card reveal"><div class="icon">👨‍⚕️</div><h3>استشارة مجانية</h3><p>صيدلي متاح طوال اليوم يجاوب على أسئلتك: الجرعات، التعارضات، والبدائل.</p></div>
+      <div class="card reveal"><div class="icon">🔁</div><h3>اشتراك الأدوية المزمنة</h3><p>أدوية الضغط والسكر وغيرها توصلك كل شهر في ميعادها من غير ما تفتكر.</p></div>
+      <div class="card reveal"><div class="icon">🩺</div><h3>قياس مجاني</h3><p>ضغط وسكر ونبض مجانًا في الفرع - من غير حجز ولا انتظار.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section products" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">الأكثر طلبًا</span>
+      <h2>منتجات أساسية بأسعار واضحة</h2>
+      <p>دي عينة بس - أي صنف مش موجود هنا ابعت اسمه واتساب وهنوفره</p>
+    </div>
+    <div class="prod-grid" id="prodGrid"></div>
+  </div>
+</section>
+
+<section class="section sub" id="sub">
+  <div class="wrap sub-grid">
+    <div class="reveal">
+      <h2>اشتراك الأدوية الشهرية - انسى همّ النسيان</h2>
+      <p>لو عندك دواء مزمن (ضغط، سكر، غدة، قلب)، سجّل معانا مرة واحدة واحنا هنجهزلك الدواء كل شهر في ميعاده ونوصلهولك لحد البيت.</p>
+      <ul>
+        <li><span class="check">✓</span> تذكير قبل نفاد الدواء بـ٥ أيام</li>
+        <li><span class="check">✓</span> خصم ١٠٪ ثابت على أدويتك الشهرية</li>
+        <li><span class="check">✓</span> توصيل مجاني لكل شحنات الاشتراك</li>
+        <li><span class="check">✓</span> إلغاء في أي وقت بمكالمة واحدة</li>
+      </ul>
+      <a href="#contact" class="btn btn-white">فعّل اشتراكك على واتساب</a>
+    </div>
+    <div class="panel reveal">
+      <div class="row"><span>رسوم الاشتراك</span><b>مجانًا</b></div>
+      <div class="row"><span>خصم الأدوية الشهرية</span><b>١٠٪ دائم</b></div>
+      <div class="row"><span>التوصيل</span><b>مجاني</b></div>
+      <div class="row"><span>مشتركين حاليين</span><b>+٤٥٠ أسرة</b></div>
+      <div class="row"><span>مدة الالتزام</span><b>ولا يوم - إلغاء أي وقت</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="info">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">المواعيد والتوصيل</span>
+      <h2>معلوماتك في مكان واحد</h2>
+    </div>
+    <div class="info-grid">
+      <div class="info reveal">
+        <h3><span class="ic">🕐</span> المواعيد</h3>
+        <ul><li>يوميًا ٢٤ ساعة</li><li>الخط الليلي للطوارئ بعد ١٢ بالليل</li><li>الصيدلي متاح للاستشارة طوال اليوم</li></ul>
+      </div>
+      <div class="info reveal">
+        <h3><span class="ic">🛵</span> التوصيل</h3>
+        <ul><li>داخل المدينة: ٦٠-٩٠ دقيقة</li><li>المناطق المجاورة: نفس اليوم</li><li>توصيل مجاني للطلبات فوق ٣٠٠ ج</li></ul>
+      </div>
+      <div class="info reveal">
+        <h3><span class="ic">📍</span> العنوان</h3>
+        <ul><li>١٥ شارع الجمهورية، وسط البلد (عنوان تجريبي)</li><li>تليفون: <bdi dir="ltr">0100 000 0000</bdi> (رقم تجريبي)</li><li>واتساب ٢٤ ساعة للطلبات</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta" id="contact">
+  <div class="wrap reveal">
+    <h2>عندك روشتة؟ صوّرها وابعتهالنا دلوقتي</h2>
+    <p>رسالة واتساب واحدة - الصيدلي يراجعها ويرد عليك بالسعر ووقت التوصيل خلال دقائق.</p>
+    <a class="btn btn-wa" href="https://wa.me/201000000000?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%AF%D9%8A%20%D8%B5%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B1%D9%88%D8%B4%D8%AA%D8%A9" target="_blank" rel="noopener">📷 ابعت صورة الروشتة واتساب</a>
+    <span class="alt">أو اتصل: <bdi dir="ltr">0100 000 0000</bdi> (رقم تجريبي) - الخط الليلي نفس الرقم</span>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>صيدلية سلامتك</b><br>
+    موقع تجريبي لعرض نموذج تصميم - جميع الأسماء والمنتجات والأسعار والأرقام placeholders
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.6 5.6.6 11.9c0 2 .5 4 1.5 5.7L.5 23.5l6-1.6c1.7.9 3.5 1.4 5.5 1.4 6.3 0 11.4-5.1 11.4-11.4S18.3.5 12 .5zm0 20.9c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-3.6 1 1-3.5-.2-.4a9.3 9.3 0 0 1-1.4-5c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4zm5.2-7c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+var WA='https://wa.me/201000000000?text=';
+var products=[
+ {e:'💊',c:'أدوية',n:'بنادول إكسترا - ٢٤ قرص',p:45,o:null,bg:'linear-gradient(135deg,#eafaf6,#c9efe4)'},
+ {e:'🧪',c:'أدوية',n:'هاي بيوتك ١جم - ١٤ قرص',p:120,o:140,off:'خصم',bg:'linear-gradient(135deg,#e3f0ff,#cfe3ff)'},
+ {e:'🩹',c:'فيتامينات',n:'فيتامين سي ١٠٠٠ فوار - ٢٠ قرص',p:75,o:null,bg:'linear-gradient(135deg,#fff3d1,#ffe6a8)'},
+ {e:'🧴',c:'عناية',n:'كريم مرطب طبي (١٠٠ جم)',p:110,o:null,bg:'linear-gradient(135deg,#ffe9ec,#ffd3da)'},
+ {e:'🌡️',c:'أجهزة',n:'ترمومتر ديجيتال',p:95,o:120,off:'-٢٠٪',bg:'linear-gradient(135deg,#f3ecff,#e4d8ff)'},
+ {e:'🩺',c:'أجهزة',n:'جهاز قياس سكر + ٢٥ شريط',p:620,o:750,off:'-١٧٪',bg:'linear-gradient(135deg,#eafaf6,#c9efe4)'},
+ {e:'💧',c:'عناية',n:'محلول عدسات (٣٦٠ مل)',p:140,o:null,bg:'linear-gradient(135deg,#e3f0ff,#cfe3ff)'},
+ {e:'🧃',c:'فيتامينات',n:'أوميجا ٣ - ٦٠ كبسولة',p:210,o:260,off:'خصم',bg:'linear-gradient(135deg,#fff3d1,#ffe6a8)'}
+];
+var grid=document.getElementById('prodGrid');
+products.forEach(function(x,i){
+  var msg=encodeURIComponent('السلام عليكم، عايز أطلب: '+x.n+' ('+x.p+' ج)');
+  grid.innerHTML+=
+  '<div class="prod reveal" style="transition-delay:'+(i%4*70)+'ms">'+
+    '<div class="thumb" style="background:'+x.bg+'">'+x.e+(x.off?'<span class="off">'+x.off+'</span>':'')+'</div>'+
+    '<div class="body"><span class="catname">'+x.c+'</span><h3>'+x.n+'</h3>'+
+    '<div class="price-row"><span class="price">'+x.p+' ج</span>'+(x.o?'<span class="old">'+x.o+' ج</span>':'')+'</div>'+
+    '<a class="order" target="_blank" rel="noopener" href="'+WA+msg+'"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.6 5.6.6 11.9c0 2 .5 4 1.5 5.7L.5 23.5l6-1.6c1.7.9 3.5 1.4 5.5 1.4 6.3 0 11.4-5.1 11.4-11.4S18.3.5 12 .5zm0 20.9c-1.7 0-3.4-.5-4.8-1.3l-.4-.2-3.6 1 1-3.5-.2-.4a9.3 9.3 0 0 1-1.4-5c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4z"/></svg>اطلب</a>'+
+    '</div></div>';
+});
+document.getElementById('burger').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
+});
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
